@@ -22,17 +22,23 @@ function formatUSD(n, plain=false){
   return `${sign}$${(value/1000).toFixed(value>=100000?1:2)}K`;
 }
 
+function moneyMarkup(inrText, usdText){
+  return `<span class="money-inr">${inrText}</span><small class="money-usd">/ ${usdText}</small>`;
+}
+
 function dualFromINR(n, plain=false){
-  return `${formatINR(n,plain)} <small>/ ${formatUSD(Number(n)/fx,plain)}</small>`;
+  return moneyMarkup(formatINR(n,plain), formatUSD(Number(n)/fx,plain));
 }
 
 function dualRange(low,high,plain=false){
-  return `${formatINR(low,plain)}–${formatINR(high,plain).replace(/^₹/,'')} <small>/ ${formatUSD(Number(low)/fx,plain)}–${formatUSD(Number(high)/fx,plain).replace(/^\$/,'')}</small>`;
+  const inr = `${formatINR(low,plain)}–${formatINR(high,plain).replace(/^₹/,'')}`;
+  const usd = `${formatUSD(Number(low)/fx,plain)}–${formatUSD(Number(high)/fx,plain).replace(/^\$/,'')}`;
+  return moneyMarkup(inr,usd);
 }
 
 function dualFromUSD(usd, plain=false){
   const inr = Number(usd) * fx;
-  return `${formatINR(inr,plain)} <small>/ ${formatUSD(usd,plain)}</small>`;
+  return moneyMarkup(formatINR(inr,plain), formatUSD(usd,plain));
 }
 
 function renderMoney(){
@@ -59,6 +65,7 @@ function toggleMenu(force){
 
 function togglePresent(){
   document.body.classList.toggle('presentation');
+  document.body.classList.toggle('presenting');
 }
 
 const fxInput = document.getElementById('fxRate');
