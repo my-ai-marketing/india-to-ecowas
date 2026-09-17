@@ -40,8 +40,9 @@ jobs:
               '<link rel="stylesheet" href="gold-glow.css?v=20260917-2">',
               '<link rel="stylesheet" href="study-nav.css?v=20260917-2">',
               '<link rel="stylesheet" href="ecowas-layout-fix.css?v=20260917-2">',
+              '<link rel="stylesheet" href="typography-refine.css?v=20260917-3">',
           ])
-          if 'ecowas-layout-fix.css?v=20260917-2' not in html:
+          if 'typography-refine.css?v=20260917-3' not in html:
               html = html.replace(base, base + '\n' + layers)
 
           html = html.replace('app.js?v=20260917-1','app.js?v=20260917-2')
