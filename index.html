@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Investment feasibility study for an Indian vegetable processing and dehydration unit exporting to ECOWAS markets.">
+<meta name="theme-color" content="#0a0a1a">
+<title>India → ECOWAS | FMCG Processing Feasibility Study</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Roboto+Flex:opsz,wdth,wght@8..144,75..150,300..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=20260917-1">
+</head>
+<body>
+<div class="mobile-bar">
+  <a class="mobile-brand" href="#executive"><span class="mini-mark">IE</span><span>India → ECOWAS</span></a>
+  <button class="menu-btn" type="button" aria-label="Open navigation" aria-expanded="false" onclick="toggleMenu()"><span></span><span></span></button>
+</div>
+<div class="menu-scrim" onclick="toggleMenu(false)"></div>
+<div class="app">
+<aside class="side" id="sideNav">
+  <div class="brand"><div class="mark">IE</div><div><h1>India → ECOWAS</h1><p>Food processing feasibility study</p></div></div>
+  <nav class="nav" aria-label="Study sections">
+    <a href="#executive">01 / Executive summary</a>
+    <a href="#framework">02 / Project framework</a>
+    <a href="#locations">03 / Location comparison</a>
+    <a href="#market">04 / Export market</a>
+    <a href="#procurement">05 / Raw materials</a>
+    <a href="#technical">06 / Technical model</a>
+    <a href="#capex">07 / Capital investment</a>
+    <a href="#licensing">08 / Licensing & legal</a>
+    <a href="#opex">09 / Monthly operating cost</a>
+    <a href="#logistics">10 / Logistics & port fees</a>
+    <a href="#products">11 / Product economics</a>
+    <a href="#financials">12 / Financial feasibility</a>
+    <a href="#scenarios">13 / Scenario analysis</a>
+    <a href="#risks">14 / Risks</a>
+    <a href="#roadmap">15 / Implementation</a>
+    <a href="#recommendation">16 / Recommendation</a>
+    <a href="#sources">17 / Sources & method</a>
+  </nav>
+  <div class="side-actions"><button class="btn" type="button" onclick="togglePresent()">Present</button><button class="btn" type="button" onclick="window.print()">Export PDF</button></div>
+  <div class="side-note">Research snapshot: 17 Sep 2026<br>Base plant: 5 t/day fresh input<br>All USD values update from the study FX assumption.</div>
+</aside>
+<main>
+<section class="hero" id="executive">
+  <div class="hero-orb"></div>
+  <div class="hero-grid">
+    <div>
+      <div class="eyebrow">Vegetable processing · India to West Africa</div>
+      <h1 class="display">Process near supply.<br><span class="accent">Export the value.</span></h1>
+      <p class="lede">A 1,000 sqm vegetable processing and dehydration unit can be technically established in India for ECOWAS exports. The investment case, however, depends less on port rent and more on farm-direct procurement, fresh-to-dry yield, energy efficiency and achievable B2B selling prices.</p>
+      <div class="decision-lockup"><span class="decision-pill">Feasibility status</span><strong>PROCEED TO PILOT & BUYER VALIDATION</strong><p>Do not commit the full processing-line CAPEX until product-level drying yields, supplier quotations and buyer price indications are validated.</p></div>
+      <div class="chips"><span class="chip">1,000 sqm</span><span class="chip">5 t/day input</span><span class="chip">Dehydration-led</span><span class="chip">ECOWAS B2B</span><span class="chip">3 location models</span></div>
+    </div>
+    <div class="hero-meta">
+      <div><span>Study FX</span><strong>US$1 = ₹<span id="fxHero">95.89</span><em>17 Sep 2026 planning rate</em></strong></div>
+      <div><span>Fresh input</span><strong>130 t / month<em>26 operating days</em></strong></div>
+      <div><span>Base dry yield</span><strong>12%<em>15.6 t finished / month</em></strong></div>
+      <div><span>Preferred next site search</span><strong>Dindigul / Madurai<em>export via Tuticorin</em></strong></div>
+    </div>
+  </div>
+  <div class="market-stat-grid hero-stats">
+    <article class="card glow"><div class="kicker">Prudent funding envelope</div><div class="fact-number money" data-low="19000000" data-high="30000000"></div><div class="fact-label">fixed setup + working capital + pre-opening contingency</div><div class="badge assumption">Planning range</div></article>
+    <article class="card"><div class="kicker">Base Dindigul OPEX</div><div class="fact-number money" data-inr="6705000"></div><div class="fact-label">per month before ocean freight, finance and tax</div><div class="badge assumption">Model</div></article>
+    <article class="card"><div class="kicker">Base operating break-even</div><div class="fact-number money" data-inr="430" data-plain="1"></div><div class="fact-label">per kg of finished dehydrated product before ocean freight</div><div class="badge assumption">12% yield</div></article>
+    <article class="card glow"><div class="kicker">India processed veg exports FY26</div><div class="fact-number money" data-usd="932190000"></div><div class="fact-label">726,874.82 MT exported in FY2025-26</div><div class="badge verified">Verified · APEDA</div></article>
+  </div>
+</section>
+
+<section id="framework">
+  <div class="section-label">02 / Project framework</div>
+  <h2 class="display small">One plant model.<br><span class="accent">Three location strategies.</span></h2>
+  <p class="lede">All locations are compared on the same 5-tonne/day fresh-input model so rent, sourcing and port economics remain comparable.</p>
+  <div class="thesis-grid">
+    <article class="thesis-card good"><span>01</span><h3>Capacity</h3><p>5 tonnes/day fresh vegetables, 26 operating days per month, approximately 1,560 tonnes/year at full utilization.</p></article>
+    <article class="thesis-card good"><span>02</span><h3>Products</h3><p>Mushroom, green beans, carrots, green onions, corn and green pepper, initially sold as B2B ingredients rather than consumer FMCG.</p></article>
+    <article class="thesis-card watch"><span>03</span><h3>Processing</h3><p>Receiving → washing → grading → cutting → blanching where needed → dehydration → QA → bulk export packing.</p></article>
+    <article class="thesis-card watch"><span>04</span><h3>Plant area</h3><p>Approximately 1,000 sqm rented industrial facility with food-grade conversion, cold holding and truck access.</p></article>
+    <article class="thesis-card risk"><span>05</span><h3>Key constraint</h3><p>Fresh vegetable cost and drying recovery dominate the economics. A small error in yield can outweigh annual rent differences.</p></article>
+    <article class="thesis-card good"><span>06</span><h3>Go-to-market</h3><p>Target importers, food manufacturers, seasoning companies, soup producers and B2B repackers across selected ECOWAS markets.</p></article>
+  </div>
+  <div class="fx-panel glow"><div><div class="kicker">Currency assumption</div><h3>Dual-currency model</h3><p>Every study cost is shown in INR and USD. Change the planning rate to recalculate USD equivalents across the page.</p></div><label>INR per US$1<input id="fxRate" type="number" min="1" step="0.01" value="95.89"></label></div>
+</section>
+
+<section id="locations">
+  <div class="section-label">03 / Location comparison</div>
+  <h2 class="display small">Do not confuse <span class="accent">port proximity</span> with lowest landed cost.</h2>
+  <p class="lede">For dehydrated foods, moving 130 tonnes of fresh produce a long distance can cost more than moving 15–18 tonnes of finished product to the port.</p>
+  <div class="scenario-table-wrap"><table><thead><tr><th>Metric</th><th>Surat / Hazira</th><th>Tuticorin port-side</th><th>Dindigul / Madurai → Tuticorin</th></tr></thead><tbody>
+    <tr><td><strong>Fixed CAPEX</strong></td><td><span class="money" data-low="9500000" data-high="16000000"></span></td><td><span class="money" data-low="9200000" data-high="15500000"></span></td><td><span class="money" data-low="9000000" data-high="15000000"></span></td></tr>
+    <tr><td><strong>Working capital</strong></td><td><span class="money" data-low="9000000" data-high="13000000"></span></td><td><span class="money" data-low="10000000" data-high="14500000"></span></td><td><span class="money" data-low="9000000" data-high="13000000"></span></td></tr>
+    <tr><td><strong>Total funding envelope</strong></td><td><span class="money" data-low="18500000" data-high="29000000"></span></td><td><span class="money" data-low="19200000" data-high="30000000"></span></td><td><span class="money" data-low="18000000" data-high="28000000"></span></td></tr>
+    <tr><td><strong>Monthly base OPEX</strong></td><td><span class="money" data-inr="6875000"></span></td><td><span class="money" data-inr="7000000"></span></td><td><span class="money" data-inr="6705000"></span></td></tr>
+    <tr><td><strong>Operating cost / finished kg</strong></td><td><span class="money" data-inr="441" data-plain="1"></span></td><td><span class="money" data-inr="449" data-plain="1"></span></td><td><span class="money" data-inr="430" data-plain="1"></span></td></tr>
+    <tr><td><strong>Indicative rent / month</strong></td><td><span class="money" data-low="180000" data-high="250000"></span></td><td><span class="money" data-low="130000" data-high="170000"></span></td><td><span class="money" data-low="80000" data-high="150000"></span></td></tr>
+    <tr><td><strong>Strategic view</strong></td><td>Best western shipping flexibility</td><td>Best port-side cost, weaker sourcing geometry</td><td><strong>Best current dehydration logic</strong></td></tr>
+  </tbody></table></div>
+  <div class="columns top-gap"><div><div class="finding"><div class="finding-num">01</div><div><h3>Surat remains the benchmark</h3><p>Strong industrial ecosystem and access to west-coast export networks. A current Sachin 10,000 sq ft listing is around <span class="money" data-inr="200000"></span> per month, before food-grade fit-out.</p></div></div><div class="finding"><div class="finding-num">02</div><div><h3>Tuticorin wins at the port</h3><p>Current Thoothukudi warehouse examples are around ₹15/sq ft/month, and carrier THC is materially lower than Hazira for a 40-ft general container.</p></div></div><div class="finding"><div class="finding-num">03</div><div><h3>Dindigul changes the freight equation</h3><p>A current 11,000 sq ft Dindigul warehouse listing is <span class="money" data-inr="80000"></span> per month. It is a market example, not a food-grade quotation.</p></div></div></div><div class="callout glow"><small>Location principle</small><h3>Move less water.</h3><p>If 130 tonnes of fresh input become approximately 15.6 tonnes of dried product, processing closer to agricultural supply can be more valuable than locating beside the port.</p></div></div>
+</section>
+
+<section id="market">
+  <div class="section-label">04 / Export market</div>
+  <h2 class="display small">India already exports at scale.<br><span class="accent">Your SKU economics must still work.</span></h2>
+  <p class="lede">APEDA reports 726,874.82 MT of processed vegetable exports in FY2025-26, valued at US$932.19 million. That proves export capability, not automatic profitability for this six-product basket.</p>
+  <div class="market-stat-grid">
+    <article class="card glow"><div class="kicker">FY26 volume</div><div class="fact-number">726,875 t</div><div class="fact-label">processed vegetables exported by India</div><div class="badge verified">APEDA / DGCIS</div></article>
+    <article class="card"><div class="kicker">FY26 export value</div><div class="fact-number money" data-usd="932190000"></div><div class="fact-label">processed vegetables</div><div class="badge verified">APEDA / DGCIS</div></article>
+    <article class="card"><div class="kicker">Initial market focus</div><div class="fact-number decision-small">B2B</div><div class="fact-label">importers, processors, ingredient distributors and repackers</div><div class="badge assumption">Recommended model</div></article>
+  </div>
+  <div class="warning"><strong>Commercial rule:</strong> do not use a generic ECOWAS “price per kg.” Nigeria, Ghana, Senegal, Côte d’Ivoire, Togo and Benin have different buyer structures, grades, duties, freight routes and achievable unit values. Buyer quotations must be SKU-specific.</div>
+</section>
+
+<section id="procurement">
+  <div class="section-label">05 / Raw-material procurement</div>
+  <h2 class="display small">The biggest cost sits <span class="accent">before the factory gate.</span></h2>
+  <p class="lede">At full capacity the plant purchases 130,000 kg of fresh vegetables every month. The base financial model uses a blended planning price of <span class="money" data-inr="37.5" data-plain="1"></span>/kg.</p>
+  <div class="chart-card"><div class="chart-head"><div><div class="kicker">Raw material sensitivity</div><h3>Monthly fresh-vegetable spend</h3></div><span class="badge assumption">130,000 kg / month</span></div>
+    <div class="sensitivity-bars">
+      <div><span><b><span class="money" data-inr="25" data-plain="1"></span>/kg</b><em><span class="money" data-inr="3250000"></span>/month</em></span><i style="width:50%"></i></div>
+      <div><span><b><span class="money" data-inr="30" data-plain="1"></span>/kg</b><em><span class="money" data-inr="3900000"></span>/month</em></span><i style="width:60%"></i></div>
+      <div class="active"><span><b><span class="money" data-inr="37.5" data-plain="1"></span>/kg</b><em><span class="money" data-inr="4875000"></span>/month</em></span><i style="width:75%"></i></div>
+      <div><span><b><span class="money" data-inr="45" data-plain="1"></span>/kg</b><em><span class="money" data-inr="5850000"></span>/month</em></span><i style="width:90%"></i></div>
+      <div><span><b><span class="money" data-inr="50" data-plain="1"></span>/kg</b><em><span class="money" data-inr="6500000"></span>/month</em></span><i style="width:100%"></i></div>
+    </div>
+  </div>
+  <div class="callout glow"><small>Profit lever</small><h3>A ₹5/kg procurement change moves annual cost by <span class="money" data-inr="7800000"></span>.</h3><p>This is far larger than the annual THC saving created by choosing Tuticorin solely because its port handling is cheaper.</p></div>
+</section>
+
+<section id="technical">
+  <div class="section-label">06 / Technical operating model</div>
+  <h2 class="display small">Design one flexible line.<br><span class="accent">Prove each recipe.</span></h2>
+  <div class="process-flow"><span>Receiving</span><b>→</b><span>Wash</span><b>→</b><span>Sort</span><b>→</b><span>Cut</span><b>→</b><span>Blanch*</span><b>→</b><span>Dry</span><b>→</b><span>QA</span><b>→</b><span>Pack</span></div>
+  <p class="chart-note">*Product-specific. Not every SKU uses the same blanching or drying profile.</p>
+  <div class="g3 grid top-gap">
+    <article class="card"><div class="kicker">Fresh input</div><div class="fact-number">5 t/day</div><p>Approximately 130 t/month at 26 operating days.</p></article>
+    <article class="card glow"><div class="kicker">Base dry recovery</div><div class="fact-number">12%</div><p>Approximately 15.6 t/month finished output. Must be replaced with trial data.</p></article>
+    <article class="card"><div class="kicker">Factory</div><div class="fact-number">1,000 m²</div><p>Raw holding, preparation, processing, packing, finished goods, QA and utilities.</p></article>
+  </div>
+  <div class="scenario-table-wrap"><table><thead><tr><th>Area</th><th>Indicative sqm</th><th>Purpose</th></tr></thead><tbody>
+    <tr><td>Raw receiving / chilled holding</td><td>150</td><td>Inbound inspection and temperature-controlled staging</td></tr>
+    <tr><td>Sorting / washing / preparation</td><td>180</td><td>Food-grade wet processing zone</td></tr>
+    <tr><td>Cutting / blanching</td><td>100</td><td>SKU preparation</td></tr>
+    <tr><td>Dehydration</td><td>250</td><td>Main thermal process</td></tr>
+    <tr><td>Packing</td><td>120</td><td>Weighing, sealing, metal detection, coding</td></tr>
+    <tr><td>Finished goods</td><td>80</td><td>Dry export storage</td></tr>
+    <tr><td>QA, hygiene, utilities, office</td><td>120</td><td>Support areas</td></tr>
+  </tbody></table></div>
+</section>
+
+<section id="capex">
+  <div class="section-label">07 / Capital investment</div>
+  <h2 class="display small">Budget the plant.<br><span class="accent">Not just the machines.</span></h2>
+  <p class="lede">The investment range includes food-grade conversion, process equipment, utilities and pre-opening costs. Final CAPEX requires at least three comparable vendor quotations.</p>
+  <div class="scenario-table-wrap"><table><thead><tr><th>CAPEX category</th><th>Planning range</th><th>Notes</th></tr></thead><tbody>
+    <tr><td><strong>Deposit / property setup</strong></td><td><span class="money" data-low="400000" data-high="800000"></span></td><td>Dindigul/Madurai case</td></tr>
+    <tr><td><strong>Food-grade fit-out</strong></td><td><span class="money" data-low="1400000" data-high="2700000"></span></td><td>Floor, walls, drainage, hygiene, partitions, electrical</td></tr>
+    <tr><td><strong>Raw preparation equipment</strong></td><td><span class="money" data-low="700000" data-high="1400000"></span></td><td>Wash, sort, peel/trim, slice/dice</td></tr>
+    <tr><td><strong>Blanching + dehydration</strong></td><td><span class="money" data-low="2700000" data-high="4900000"></span></td><td>Largest technical CAPEX variable</td></tr>
+    <tr><td><strong>Packing + QA</strong></td><td><span class="money" data-low="600000" data-high="1200000"></span></td><td>Weighing, sealing, coding, metal detection</td></tr>
+    <tr><td><strong>Cold storage</strong></td><td><span class="money" data-low="600000" data-high="1200000"></span></td><td>Raw-material chilled holding</td></tr>
+    <tr><td><strong>Utilities</strong></td><td><span class="money" data-low="1000000" data-high="1800000"></span></td><td>Power, water, effluent, compressor, thermal system</td></tr>
+    <tr><td><strong>Handling / racks / office</strong></td><td><span class="money" data-low="400000" data-high="700000"></span></td><td>SS bins, racks, furniture, basic IT</td></tr>
+    <tr><td><strong>Licensing / pre-opening</strong></td><td><span class="money" data-low="300000" data-high="500000"></span></td><td>Professional and certification reserve</td></tr>
+    <tr><td><strong>Contingency</strong></td><td><span class="money" data-low="800000" data-high="1200000"></span></td><td>Installation and scope variance</td></tr>
+  </tbody></table></div>
+  <div class="callout glow"><small>Fixed setup target</small><h3><span class="money" data-low="9000000" data-high="15000000"></span></h3><p>More automation, larger cold rooms or premium dryer technology can push the project above this range.</p></div>
+</section>
+
+<section id="licensing">
+  <div class="section-label">08 / Licensing, registration & legal</div>
+  <h2 class="display small">Regulation is manageable.<br><span class="accent">Facility compliance matters.</span></h2>
+  <div class="scenario-table-wrap"><table><thead><tr><th>Registration / approval</th><th>Cost assumption</th><th>Status / basis</th></tr></thead><tbody>
+    <tr><td>Company incorporation</td><td><span class="money" data-low="30000" data-high="60000"></span></td><td>Professional + stamp-duty planning allowance</td></tr>
+    <tr><td>GST registration</td><td>Government fee nil; professional support optional</td><td>National</td></tr>
+    <tr><td>Udyam / MSME</td><td><span class="money" data-inr="0" data-plain="1"></span></td><td>Official portal states registration is free and paperless</td></tr>
+    <tr><td>IEC</td><td>Low government fee + professional support if used</td><td>Required for export</td></tr>
+    <tr><td>APEDA e-RCMC</td><td><span class="money" data-inr="5900" data-plain="1"></span></td><td>₹5,000 registration + 18% GST; 5-year validity</td></tr>
+    <tr><td>FSSAI Central Licence</td><td><span class="money" data-inr="7500" data-plain="1"></span>/year</td><td>All other food manufacturing &gt;2 MT/day</td></tr>
+    <tr><td>Pollution / factory / fire / electrical approvals</td><td><span class="money" data-low="100000" data-high="275000"></span></td><td>Planning reserve; location/building dependent</td></tr>
+    <tr><td>HACCP / ISO 22000 + lab validation</td><td><span class="money" data-low="105000" data-high="225000"></span></td><td>Commercially advisable for B2B export</td></tr>
+  </tbody></table></div>
+  <div class="warning"><strong>Lease gate:</strong> do not sign a long-term factory lease until power load, drainage/effluent route, food-manufacturing use, fire compliance, potable/process water and truck/container access are technically checked.</div>
+</section>
+
+<section id="opex">
+  <div class="section-label">09 / Monthly operating cost</div>
+  <h2 class="display small">The monthly cash need is <span class="accent">raw-material heavy.</span></h2>
+  <p class="lede">Dindigul/Madurai base case at 100% of the assumed 5 t/day fresh-input capacity.</p>
+  <div class="scenario-table-wrap"><table><thead><tr><th>Expense</th><th>Monthly base</th><th>Share / comment</th></tr></thead><tbody>
+    <tr><td><strong>Raw vegetables</strong></td><td><span class="money" data-inr="4875000"></span></td><td>130,000 kg × ₹37.50/kg planning average</td></tr>
+    <tr><td><strong>Labour</strong></td><td><span class="money" data-inr="535000"></span></td><td>~25–27 staff incl. supervision, QA, operators, packing and support</td></tr>
+    <tr><td><strong>Rent</strong></td><td><span class="money" data-inr="90000"></span></td><td>Base-case inland Tamil Nadu assumption</td></tr>
+    <tr><td><strong>Energy</strong></td><td><span class="money" data-inr="400000"></span></td><td>Electric + thermal planning allowance</td></tr>
+    <tr><td>Water / ETP</td><td><span class="money" data-inr="55000"></span></td><td>Process water and wastewater handling</td></tr>
+    <tr><td>Maintenance</td><td><span class="money" data-inr="55000"></span></td><td>Spares and preventive maintenance</td></tr>
+    <tr><td>QA / sanitation / pest control</td><td><span class="money" data-inr="45000"></span></td><td>Routine compliance and hygiene</td></tr>
+    <tr><td>Admin / insurance</td><td><span class="money" data-inr="45000"></span></td><td>Basic overhead</td></tr>
+    <tr><td><strong>Packaging</strong></td><td><span class="money" data-inr="200000"></span></td><td>B2B bulk packs/cartons</td></tr>
+    <tr><td><strong>Farm → plant freight</strong></td><td><span class="money" data-inr="250000"></span></td><td>Requires route-by-route quotations</td></tr>
+    <tr><td><strong>Plant → port + origin logistics</strong></td><td><span class="money" data-inr="155000"></span></td><td>2–3 dry containers/month planning allowance</td></tr>
+    <tr class="total-row"><td><strong>Total</strong></td><td><strong><span class="money" data-inr="6705000"></span></strong></td><td><strong>Before ocean freight, finance and income tax</strong></td></tr>
+  </tbody></table></div>
+  <div class="g3 grid top-gap"><article class="card"><div class="kicker">Annual OPEX</div><div class="fact-number money" data-inr="80460000"></div><p>Base full-capacity operating model.</p></article><article class="card glow"><div class="kicker">Working capital</div><div class="fact-number money" data-low="9000000" data-high="13000000"></div><p>Initial target before extended customer credit.</p></article><article class="card"><div class="kicker">Base output</div><div class="fact-number">15.6 t/mo</div><p>At 12% blended dry recovery.</p></article></div>
+</section>
+
+<section id="logistics">
+  <div class="section-label">10 / Logistics & port fees</div>
+  <h2 class="display small">Tuticorin is cheaper at the terminal.<br><span class="accent">That is only one part of the chain.</span></h2>
+  <div class="scenario-table-wrap"><table><thead><tr><th>Origin cost item</th><th>Hazira example</th><th>Tuticorin example</th><th>Basis</th></tr></thead><tbody>
+    <tr><td><strong>40' GP outbound THC</strong></td><td><span class="money" data-inr="17000" data-plain="1"></span></td><td><span class="money" data-inr="9500" data-plain="1"></span></td><td>OOCL published India local charges</td></tr>
+    <tr><td><strong>Documentation / BL</strong></td><td><span class="money" data-inr="3500" data-plain="1"></span></td><td><span class="money" data-inr="3500" data-plain="1"></span></td><td>OOCL electronic/manual BL fee</td></tr>
+    <tr><td><strong>THC saving / 40' container</strong></td><td>—</td><td><span class="money" data-inr="7500" data-plain="1"></span></td><td>Tuticorin vs Hazira carrier comparison</td></tr>
+  </tbody></table></div>
+  <div class="g3 grid top-gap">
+    <article class="card"><div class="kicker">Hazira dry origin budget</div><div class="fact-number money" data-low="40000" data-high="60000"></div><p>Indicative combined road/THC/docs/CHA/misc. per 40HC, excluding ocean freight.</p></article>
+    <article class="card glow"><div class="kicker">Tuticorin dry origin budget</div><div class="fact-number money" data-low="27000" data-high="40000"></div><p>Indicative port-side combined origin cost per 40HC.</p></article>
+    <article class="card"><div class="kicker">Monthly containers</div><div class="fact-number">2–3</div><p>Preliminary 40HC requirement; bulk density can change this materially.</p></article>
+  </div>
+  <div class="columns top-gap"><div class="callout"><small>Western route</small><h3>Mundra / Nhava Sheva</h3><p>Maersk's 2026 Mesawa rotation includes Mundra → Nhava Sheva → Pointe Noire → Tema → Apapa, giving western India direct West Africa options.</p></div><div class="callout"><small>Southern route</small><h3>Tuticorin → Colombo → West Africa</h3><p>CMA CGM's 2026 WAX1 links Colombo with Abidjan and Lekki; WAX2/WAX3 provide additional West Africa coverage through Asian hubs.</p></div></div>
+</section>
+
+<section id="products">
+  <div class="section-label">11 / Product economics</div>
+  <h2 class="display small">Treat six vegetables as <span class="accent">six businesses.</span></h2>
+  <p class="lede">The factory should not launch all six SKUs at equal volume. Each requires its own fresh-price, trim loss, dehydration yield, energy curve, quality specification and buyer price.</p>
+  <div class="product-grid">
+    <article class="buyer-card glow"><span class="priority">Pilot first</span><h3>Carrot</h3><p>Mechanically straightforward and suitable for early process validation. Tamil Nadu has established carrot production, including Dindigul.</p></article>
+    <article class="buyer-card glow"><span class="priority">Pilot first</span><h3>Green beans</h3><p>Requires quality control for maturity, fibre, diameter, colour and rehydration performance.</p></article>
+    <article class="buyer-card"><span class="priority secondary">Validate premium</span><h3>Green onion</h3><p>Very high moisture makes yield critical, but flakes can serve soup and seasoning buyers.</p></article>
+    <article class="buyer-card"><span class="priority secondary">Validate premium</span><h3>Green pepper</h3><p>Colour retention and final grade strongly affect selling price.</p></article>
+    <article class="buyer-card"><span class="priority secondary">Compare process</span><h3>Corn</h3><p>Commercial study should compare dehydrated sweet corn with IQF/frozen economics.</p></article>
+    <article class="buyer-card risk-card"><span class="priority risk-pill">Specialist</span><h3>Mushroom</h3><p>High raw-material value plus high moisture can create expensive dried output. Require buyer-backed pricing before scale.</p></article>
+  </div>
+  <div class="callout glow"><small>Simple screening formula</small><h3>Fresh cost ÷ dry recovery.</h3><p>A fresh input at <span class="money" data-inr="30" data-plain="1"></span>/kg with 15% recovery contributes about <span class="money" data-inr="200" data-plain="1"></span>/kg of dried-product raw material cost. At <span class="money" data-inr="80" data-plain="1"></span>/kg and 10% recovery, raw material alone becomes <span class="money" data-inr="800" data-plain="1"></span>/kg before processing.</p></div>
+</section>
+
+<section id="financials">
+  <div class="section-label">12 / Financial feasibility</div>
+  <h2 class="display small">The model works only above the <span class="accent">right realized price.</span></h2>
+  <div class="g4 grid">
+    <article class="card"><div class="kicker">Fixed investment</div><div class="fact-number money" data-low="9000000" data-high="15000000"></div><p>Dindigul/Madurai planning range.</p></article>
+    <article class="card"><div class="kicker">Working capital</div><div class="fact-number money" data-low="9000000" data-high="13000000"></div><p>Before long customer-credit cycles.</p></article>
+    <article class="card glow"><div class="kicker">Prudent total funding</div><div class="fact-number money" data-low="19000000" data-high="30000000"></div><p>Includes pre-opening contingency.</p></article>
+    <article class="card"><div class="kicker">Planning midpoint</div><div class="fact-number money" data-inr="24000000"></div><p>Use until vendor and buyer quotations narrow the model.</p></article>
+  </div>
+  <div class="scenario-table-wrap"><table><thead><tr><th>Selling price / kg</th><th>Annual revenue</th><th>Annual operating surplus</th><th>Interpretation</th></tr></thead><tbody>
+    <tr><td><span class="money" data-inr="400" data-plain="1"></span></td><td><span class="money" data-inr="74880000"></span></td><td class="negative"><span class="money" data-inr="-5580000"></span></td><td>Operating loss before freight/finance/tax</td></tr>
+    <tr><td><span class="money" data-inr="450" data-plain="1"></span></td><td><span class="money" data-inr="84240000"></span></td><td><span class="money" data-inr="3780000"></span></td><td>Thin operating margin</td></tr>
+    <tr class="highlight-row"><td><strong><span class="money" data-inr="550" data-plain="1"></span></strong></td><td><strong><span class="money" data-inr="102960000"></span></strong></td><td><strong><span class="money" data-inr="22500000"></span></strong></td><td><strong>Potentially investable if buyer-backed</strong></td></tr>
+    <tr><td><span class="money" data-inr="650" data-plain="1"></span></td><td><span class="money" data-inr="121680000"></span></td><td><span class="money" data-inr="41220000"></span></td><td>Premium realization case</td></tr>
+  </tbody></table></div>
+  <div class="warning"><strong>Important:</strong> these are operating scenarios, not profit forecasts. Ocean freight, depreciation, interest, income tax and destination-country charges are excluded.</div>
+</section>
+
+<section id="scenarios">
+  <div class="section-label">13 / Scenario & sensitivity analysis</div>
+  <h2 class="display small">Yield can change the business <span class="accent">faster than rent.</span></h2>
+  <div class="scenario-table-wrap"><table><thead><tr><th>Blended dry yield</th><th>Finished output / month</th><th>Operating cost / kg</th></tr></thead><tbody>
+    <tr><td>8%</td><td>10,400 kg</td><td><span class="money" data-inr="645" data-plain="1"></span></td></tr>
+    <tr><td>10%</td><td>13,000 kg</td><td><span class="money" data-inr="516" data-plain="1"></span></td></tr>
+    <tr class="highlight-row"><td><strong>12% base</strong></td><td><strong>15,600 kg</strong></td><td><strong><span class="money" data-inr="430" data-plain="1"></span></strong></td></tr>
+    <tr><td>14%</td><td>18,200 kg</td><td><span class="money" data-inr="368" data-plain="1"></span></td></tr>
+    <tr><td>16%</td><td>20,800 kg</td><td><span class="money" data-inr="322" data-plain="1"></span></td></tr>
+    <tr><td>18%</td><td>23,400 kg</td><td><span class="money" data-inr="287" data-plain="1"></span></td></tr>
+  </tbody></table></div>
+  <div class="chart-card"><div class="chart-head"><div><div class="kicker">Illustrative five-year ramp</div><h3>At initial realized selling price of <span class="money" data-inr="550" data-plain="1"></span>/kg</h3></div><span class="badge assumption">Not a forecast</span></div>
+    <div class="scenario-table-wrap inner-table"><table><thead><tr><th>Year</th><th>Utilization</th><th>Revenue</th><th>Operating cost</th><th>EBITDA-like surplus</th></tr></thead><tbody>
+      <tr><td>1</td><td>60%</td><td><span class="money" data-inr="61800000"></span></td><td><span class="money" data-inr="52600000"></span></td><td><span class="money" data-inr="9200000"></span></td></tr>
+      <tr><td>2</td><td>75%</td><td><span class="money" data-inr="80300000"></span></td><td><span class="money" data-inr="66200000"></span></td><td><span class="money" data-inr="14100000"></span></td></tr>
+      <tr><td>3</td><td>85%</td><td><span class="money" data-inr="94700000"></span></td><td><span class="money" data-inr="77200000"></span></td><td><span class="money" data-inr="17500000"></span></td></tr>
+      <tr><td>4</td><td>90%</td><td><span class="money" data-inr="104200000"></span></td><td><span class="money" data-inr="85100000"></span></td><td><span class="money" data-inr="19100000"></span></td></tr>
+      <tr><td>5</td><td>90%</td><td><span class="money" data-inr="108400000"></span></td><td><span class="money" data-inr="89300000"></span></td><td><span class="money" data-inr="19100000"></span></td></tr>
+    </tbody></table></div>
+  </div>
+</section>
+
+<section id="risks">
+  <div class="section-label">14 / Risk register</div>
+  <h2 class="display small">The project is controllable.<br><span class="accent">Only if the gates are enforced.</span></h2>
+  <div class="risk-table-wrap"><table><thead><tr><th>Risk</th><th>Impact</th><th>Control</th></tr></thead><tbody>
+    <tr><td><strong>Raw-material inflation</strong></td><td>Very high</td><td>Multi-cluster sourcing, seasonal contracts, reject specifications, weekly procurement dashboard</td></tr>
+    <tr><td><strong>Drying yield below model</strong></td><td>Very high</td><td>Paid pilot trials before machinery order; SKU-specific mass balance</td></tr>
+    <tr><td><strong>Energy overconsumption</strong></td><td>High</td><td>Vendor guarantee in kWh/thermal units per kg of water removed</td></tr>
+    <tr><td><strong>Buyer price too low</strong></td><td>Very high</td><td>Buyer sampling + written price indications + LOIs/trial orders</td></tr>
+    <tr><td><strong>Quality rejection</strong></td><td>High</td><td>HACCP controls, water activity, microbiology, pesticide-residue specification and metal detection</td></tr>
+    <tr><td><strong>60–90 day receivables</strong></td><td>High</td><td>LC/advance/CAD where possible; credit insurance; working-capital line</td></tr>
+    <tr><td><strong>Freight / transshipment disruption</strong></td><td>Medium–high</td><td>Maintain west-coast and Tuticorin routing options</td></tr>
+  </tbody></table></div>
+</section>
+
+<section id="roadmap">
+  <div class="section-label">15 / Implementation roadmap</div>
+  <h2 class="display small">Spend in stages.<br><span class="accent">Release capital against evidence.</span></h2>
+  <div class="roadmap">
+    <article><span>01</span><div><h3>Supplier validation</h3><p>Map 5–10 suppliers per priority SKU; collect seasonal price/volume and transport quotations.</p></div></article>
+    <article><span>02</span><div><h3>Pilot drying trials</h3><p>Measure cleaned yield, trim loss, drying hours, energy use, final moisture, water activity, colour and rehydration.</p></div></article>
+    <article><span>03</span><div><h3>Buyer validation</h3><p>Send samples to ECOWAS importers/processors and obtain written target specifications and price indications.</p></div></article>
+    <article><span>04</span><div><h3>Site & compliance due diligence</h3><p>Check food use, power, water, drainage, fire, pollution-consent route and transport access before lease.</p></div></article>
+    <article><span>05</span><div><h3>Vendor tender</h3><p>Obtain at least three comparable processing/dehydration proposals with performance guarantees.</p></div></article>
+    <article><span>06</span><div><h3>Commercial launch</h3><p>Start with 2–4 validated SKUs and scale only after contribution margin and repeat orders are demonstrated.</p></div></article>
+  </div>
+</section>
+
+<section id="recommendation">
+  <div class="section-label">16 / Recommendation</div>
+  <h2 class="display small">Proceed with the study.<br><span class="accent">Do not yet release full CAPEX.</span></h2>
+  <div class="recommendation-grid">
+    <div class="recommendation-main glow"><span class="decision-pill">Current direction</span><h3>Dindigul / Madurai processing corridor → VOC Port, Tuticorin</h3><p>For a dehydration-led operation, inland processing deserves first investigation because it can reduce movement of high-moisture fresh produce while retaining access to a competitive export port.</p></div>
+    <div class="recommendation-side"><div><span>Benchmark alternative</span><strong>Surat / Sachin → Hazira / west-coast ports</strong></div><div><span>Port-side alternative</span><strong>Tuticorin / Thoothukudi</strong></div><div><span>Prudent funding midpoint</span><strong><span class="money" data-inr="24000000"></span></strong></div><div><span>Full-CAPEX gate</span><strong>2–3 buyer LOIs / trial orders + proven SKU yields</strong></div></div>
+  </div>
+  <div class="callout glow"><small>Investment committee conclusion</small><h3>Commercial feasibility is conditional, not negative.</h3><p>The plant can be built and operated. The remaining question is whether selected SKUs can consistently realize enough margin after farm-gate cost, drying losses, energy, export logistics and buyer payment terms. Validate that before committing the full line.</p></div>
+</section>
+
+<section id="sources">
+  <div class="section-label">17 / Sources & method</div>
+  <h2 class="display small">Verified inputs.<br><span class="accent">Explicit assumptions.</span></h2>
+  <p class="lede">Official and carrier sources are used where available. Property listings and logistics budgets are market observations or planning assumptions—not binding quotations.</p>
+  <div class="source-grid">
+    <a class="source-card" href="https://apeda.gov.in/ProcessedVegetables" target="_blank" rel="noopener"><span>01</span><div><h3>APEDA — Processed Vegetables</h3><p>FY2025-26 export volume/value and product coverage.</p></div></a>
+    <a class="source-card" href="https://foscos.fssai.gov.in/search-eligibility/CL" target="_blank" rel="noopener"><span>02</span><div><h3>FSSAI FoSCoS</h3><p>Central licence threshold and annual licence fee for food manufacturers.</p></div></a>
+    <a class="source-card" href="https://udyamregistration.gov.in/" target="_blank" rel="noopener"><span>03</span><div><h3>Udyam / Ministry of MSME</h3><p>Official free and paperless MSME registration.</p></div></a>
+    <a class="source-card" href="https://apeda.gov.in/sites/default/files/documents/2026-04/Registration.pdf" target="_blank" rel="noopener"><span>04</span><div><h3>APEDA e-RCMC circular</h3><p>Manufacturer evidence, fee and validity.</p></div></a>
+    <a class="source-card" href="https://www.oocl.com/india/eng/localinformation/localsurcharges/Pages/Hazira.aspx" target="_blank" rel="noopener"><span>05</span><div><h3>OOCL — Hazira local charges</h3><p>Outbound THC and documentation examples.</p></div></a>
+    <a class="source-card" href="https://www.oocl.com/india/eng/localinformation/localsurcharges/Pages/Local%20Surcharge%20for%20Tuticorin.aspx" target="_blank" rel="noopener"><span>06</span><div><h3>OOCL — Tuticorin local charges</h3><p>Outbound THC and documentation examples.</p></div></a>
+    <a class="source-card" href="https://www.maersk.com/news/articles/2026/04/07/mesawa-temporary-service-adjustment-2026" target="_blank" rel="noopener"><span>07</span><div><h3>Maersk — Mesawa 2026</h3><p>Mundra / Nhava Sheva → Tema / Apapa rotation.</p></div></a>
+    <a class="source-card" href="https://monitor.cma-cgm.com/news/5304/cma-cgm-asia-to-west-africa-central-range-service-update" target="_blank" rel="noopener"><span>08</span><div><h3>CMA CGM — WAX services 2026</h3><p>Colombo / Asia connectivity to Abidjan, Lekki, Tema, Lomé, Apapa and Cotonou.</p></div></a>
+    <a class="source-card" href="https://www.magicbricks.com/warehouse-godown-for-rent-in-dindigul-pppfr" target="_blank" rel="noopener"><span>09</span><div><h3>Dindigul warehouse market example</h3><p>11,000 sq ft listing at ₹80,000/month; not a food-grade quote.</p></div></a>
+    <a class="source-card" href="https://www.magicbricks.com/commercial-property-for-rent-in-sachin-gidc-surat-pppfr" target="_blank" rel="noopener"><span>10</span><div><h3>Sachin GIDC market example</h3><p>10,000 sq ft industrial-shed listing around ₹2 lakh/month.</p></div></a>
+    <a class="source-card" href="https://www.13sqft.com/product/ready-warehouse-available-for-rent-tuticorin-lt0ldpqtge31" target="_blank" rel="noopener"><span>11</span><div><h3>Tuticorin warehouse market example</h3><p>10,000 sq ft PEB warehouse listed at ₹15/sq ft/month.</p></div></a>
+    <a class="source-card" href="https://www.gercin.org/tariff_schedule" target="_blank" rel="noopener"><span>12</span><div><h3>GERC tariff schedules</h3><p>Current Gujarat distribution tariff schedules effective April 2026.</p></div></a>
+  </div>
+  <div class="method-card glow"><div class="kicker">Study method</div><h3>Planning model — not a bankable DPR yet</h3><p>Values marked as assumptions must be replaced with written vendor, farm, transporter, shipping-line and buyer quotations. USD equivalents use the editable study FX rate shown above; changing that rate does not change the underlying INR assumptions.</p></div>
+</section>
+<footer><span>India → ECOWAS FMCG Processing Feasibility Study</span><span>Research snapshot · 17 September 2026</span></footer>
+</main>
+</div>
+<script src="app.js?v=20260917-1"></script>
+</body>
+</html>
